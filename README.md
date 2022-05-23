@@ -7,7 +7,7 @@
 # Script [Player](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/Player.cs)
 
 ## Inicio del juego
-<img src="README/StartGame.png" width=60%/>
+<img src="README/StartGame.png" width=80%/>
 
 * Si presionamos el click izquierdo y no estamos tocando en ningun boton del menu:
   * Cambiamos la variable `started` a verdadero
@@ -32,7 +32,7 @@
 # Script [HUD](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/HUD.cs)
 
 ## Puntuacion
-<img src="README/Score.png" width=60%/>
+<img src="README/Score.png" width=50%/>
 
 * Si el juego esta iniciado:
   * Restamos a la variable `scoreTime` el tiempo actual
@@ -55,7 +55,7 @@
 # Script [GameManager](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/GameManager.cs)
 
 ## Spawn de objetos cada 1 segundo
-<img src="README/Update.png" width=60%/>
+<img src="README/Update.png" width=55%/>
 
 * Aumentamos la variable `timeElapsed` el tiempo acutal
 * Si paso 1 segundo y el juego esta iniciado:
@@ -65,7 +65,7 @@
 ---
 
 ## Spawn de las tostadoras
-<img src="README/SpawnToasters.png" width=60%/>
+<img src="README/SpawnToasters.png" width=100%/>
 
 * Instanciamos la tostadora en posicion 0 de X, la posicion Y se va a basar en una `toasterSeparation` que establece la separacion constante entre cada tostadora mas un `toasterOffset` que va a ir aumentando cada vez que se ejecute la funcion
 * Actualizamos el valor de la variable `toasterOffset` teniendo en cuenta la posicion Y de la ultima tostadora creada
@@ -74,7 +74,7 @@
 ---
 
 ## Spawn de las nubes
-<img src="README/SpawnClouds.png" width=60%/>
+<img src="README/SpawnClouds.png" width=90%/>
 
 * Asignamos el valor de la variable `cloudSeparation` entre un rango de 3 y 5 que sera la separacion entre cada nube
 * Creamos dos variables `positionX` y `positionY` con un valor tambien aleatorio. No obstante a la variable `positionY` le sumamos las variables antes asignadas `cloudSeparation` y `cloudOffset`
@@ -87,7 +87,7 @@
 ---
 
 ## Spawn de las tostadas
-<img src="README/SpawnToasts.png" width=60%/>
+<img src="README/SpawnToasts.png" width=90%/>
 
 * Asignamos el valor de la variable `randomNumber` entre un rango de 0 y 100
 * Vamos a utilizar esta variable para que las siguientes lineas de codigo se ejecuten en un 50% de posibilidad:
