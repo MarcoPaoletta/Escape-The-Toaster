@@ -6,8 +6,9 @@
 
 # Script [Player](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/Player.cs)
 
-### Inicio del juego
-![Code](README/StartGame.png)
+## Inicio del juego
+<img src="README/StartGame.png" width=60%/>
+
 * Si presionamos el click izquierdo y no estamos tocando en ningun boton del menu:
   * Cambiamos la variable `started` a verdadero
   * Mostramos el hud
@@ -18,8 +19,9 @@
 
 ---
 
-### Muerte
-![Code](README/Death.png)
+## Muerte
+<img src="README/Death.png" width=60%/>
+
 * Modificando `timeScale` a 0 logramos que se pause el juego
 * Cambiamos la variable `isAlive` a falso que es la que maneja si el jugador esta o no vivo
 * Mostramos la pantalla de GameOver
@@ -29,8 +31,9 @@
 
 # Script [HUD](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/HUD.cs)
 
-### Puntuacion
-![Code](README/Score.png)
+## Puntuacion
+<img src="README/Score.png" width=60%/>
+
 * Si el juego esta iniciado:
   * Restamos a la variable `scoreTime` el tiempo actual
   * Si la variable `scoreTime` es menor a 0:
@@ -40,8 +43,9 @@
 
 ---
 
-### Dinero
-![Code](README/Money.png)
+## Dinero
+<img src="README/Money.png" width=60%/>
+
 * Aumentamos la variable `money`
 * Cambiamos el `moneyText.text`
 * Guardamos usando `PlayerPrefs` la cantidad de dinero
@@ -50,21 +54,28 @@
 
 # Script [GameManager](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/GameManager.cs)
 
-### Spawn de objetos cada 1 segundo
-![Code](README/Update.png)
+## Spawn de objetos cada 1 segundo
+<img src="README/Update.png" width=60%/>
+
 * Aumentamos la variable `timeElapsed` el tiempo acutal
 * Si paso 1 segundo y el juego esta iniciado:
   * Reseteamos el valor de la variable `timeElapsed`
   * Llamamos a las distintas funciones para spawnear los objetos
 
-### Spawn de las tostadoras
-![Code](README/SpawnToasters.png)
+---
+
+## Spawn de las tostadoras
+<img src="README/SpawnToasters.png" width=60%/>
+
 * Instanciamos la tostadora en posicion 0 de X, la posicion Y se va a basar en una `toasterSeparation` que establece la separacion constante entre cada tostadora mas un `toasterOffset` que va a ir aumentando cada vez que se ejecute la funcion
 * Actualizamos el valor de la variable `toasterOffset` teniendo en cuenta la posicion Y de la ultima tostadora creada
     > De esta manera logramos que las tostadoras se spawnen de manera procedural teniendo en cuenta una separacion entre cada tostadora y un offset que va a ir aumentando dependiendo de la posicion de la ultima tostadora creada
 
-### Spawn de las nubes
-![Code](README/SpawnClouds.png)
+---
+
+## Spawn de las nubes
+<img src="README/SpawnClouds.png" width=60%/>
+
 * Asignamos el valor de la variable `cloudSeparation` entre un rango de 3 y 5 que sera la separacion entre cada nube
 * Creamos dos variables `positionX` y `positionY` con un valor tambien aleatorio. No obstante a la variable `positionY` le sumamos las variables antes asignadas `cloudSeparation` y `cloudOffset`
 * Creamos otra variable `scale` para la escala de la nube
@@ -75,8 +86,9 @@
 
 ---
 
-### Spawn de las tostadas
-![Code](README/SpawnToasts.png)
+## Spawn de las tostadas
+<img src="README/SpawnToasts.png" width=60%/>
+
 * Asignamos el valor de la variable `randomNumber` entre un rango de 0 y 100
 * Vamos a utilizar esta variable para que las siguientes lineas de codigo se ejecuten en un 50% de posibilidad:
   * Asignamos valores aleatorios a las variables `toastSeparation`, `positionX` y `positionY`. No obstante a la variable `positionY` le sumamos las variables antes asignadas `cloudSeparation` y `cloudOffset` 
