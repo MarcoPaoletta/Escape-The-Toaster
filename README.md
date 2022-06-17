@@ -4,7 +4,7 @@
 
 ---
 
-# Script [Player](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/Player.cs)
+# Script [Fork](https://github.com/MarcoPaoletta/Escape-The-Toaster/blob/main/Assets/Scripts/Fork.cs)
 
 ## Inicio del juego
 <img src="README/StartGame.png" width=80%/>
